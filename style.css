@@ -1,0 +1,88 @@
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-1{
+    flex: none; /* This will prevent the card from growing and shrinking */
+    width: 100%; /* Set the width to 100% for small devices */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.msg-card{
+    border-radius: 5px;
+    width: 100px;
+    border: 2px;
+}
+
+.data-row {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens larger than 600px */
+@media (min-width: 600px) {
+    .card-1 {
+        width: 220px; /* Set the width to 220px for larger devices */
+    }
+}
+
+.card-2 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    overflow-y: auto; /* This will add a vertical scrollbar if the content overflows */
+}
+
+.card-3{
+    flex: 1; /* This will make the cards take up the remaining space equally */
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    height: 100vh;
+}
+
+.vertical-divs {
+    display: flex;
+    flex-direction: column;
+}
+
+.div1{
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    height: auto;
+    overflow: auto;  /* This will add a vertical scrollbar if the content overflows  */
+}
+
+.div2 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    height: auto;
+    overflow: auto;  
+    /* This will add a vertical scrollbar if the content overflows  */
+}
+
+/* .div1, .div2 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    height: calc(100vh - 60px); /* Adjust the height to the viewport height minus the margins and paddings */
+    /* overflow-y: auto; /* This will add a vertical scrollbar if the content overflows  */
